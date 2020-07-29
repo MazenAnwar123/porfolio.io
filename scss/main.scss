@@ -1,0 +1,64 @@
+@import "config";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include image;
+    background: rgba($primary-color,0.5);
+    color: rgb(255, 254, 254);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+h1 ,h2 ,h3 {
+    margin: 0;
+    font-weight: 400;
+
+&.larg-header {
+        font-size: 5rem;
+    }
+    
+&.small-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, $amount: 2),0.5);
+    }
+}
+
+h1 {
+    padding-top: 10rem;
+    padding-left: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.secondName {
+    color: $secondary-color;
+}
+
+i {
+    margin: 10px 15px ;
+    &:hover{
+        color: $secondary-color;
+        @include transitions();
+    }
+}
+.home {
+    overflow: hidden;
+}
