@@ -1,2 +1,2 @@
-# porfolio.io
+# porfolio
 my porfolio

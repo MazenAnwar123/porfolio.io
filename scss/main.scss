@@ -45,7 +45,7 @@ a {
 
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
 }
 .secondName {
@@ -89,9 +89,68 @@ i {
                 transform: rotate(45deg) translate(-2px,-2px);
                 opacity: 0;
         }
+            
     }
 }
 &.close{
     transform: rotate(90deg);
 }
 }
+.home {
+    margin-left: 4rem;
+}
+.menu { 
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+    z-index: -1;
+    
+    &.show{
+     visibility: visible;
+ }
+ 
+ 
+ 
+}
+.brand , .nav  {
+         display: flex;
+         //flex-flow: column wrap;
+         align-items: center;
+         justify-content: center;
+        
+         float: right;
+         width : 50%;
+         height: 100vh;
+         overflow: hidden;
+         @include transitions;
+        }
+        li {
+            list-style:  none;
+            text-align: center;
+        }
+        .nav {
+            background: darken($primary-color, 5);
+            transform: translate3d(0,100%,0);
+            &.show {
+                @include transitions;
+                transform: translate3d(0,0,0,);
+            }
+        }
+        .brand {
+            background: $primary-color;
+            transform: translate3d(0,-100%,0);
+            &.show {
+                @include transitions;
+                transform: translate3d(0,0,0,);
+            }
+            .protrait {
+                width: 250px;
+                height: 250px;
+                background: url(../img/IMAG06090.jpg);
+                border-radius: 50%;
+                border: solid 3px $primary-color;
+            }
+        }
