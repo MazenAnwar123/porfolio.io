@@ -1,0 +1,54 @@
+@include mediaMd {
+    html {
+        margin: 0;
+        padding:0;
+    }
+    body {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+
+        .larg-header { 
+            line-height: 1;
+            margin: 0rem;
+            margin-bottom: 1rem;
+            margin-top: 10vh;
+            color: green;
+        }
+
+        .small-header {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .menu {
+        float: none ;
+        .brand {
+            transform: translate3d(-100%,0,0);
+            width :100%;
+            .protrait{
+                width: 150px;
+                height: 150px;
+                background: url(../img/IMAG06090sm.jpg);
+            }
+            &.show{
+                transform: translate3d(0,0,0);
+                height: 30vh;
+            }
+            
+        }
+        .nav {
+        transform: translate3d(100%,0,0);
+        width :100%;
+        align-items: center;
+        justify-content: center;
+        padding-right: 1rem;
+        &.show{
+        transform: translate3d(0,0,0);
+        height: 70vh;
+        }
+        }
+    }
+}

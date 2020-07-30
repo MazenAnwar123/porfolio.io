@@ -28,3 +28,9 @@ $background-opacity: 0.5;
         background: rgba($primary-color, $background-opacity);
     }
 }
+
+@mixin mediaMd {
+    @media screen and (max-width : 500px) {
+        @content;
+    }
+}

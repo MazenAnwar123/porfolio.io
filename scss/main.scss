@@ -1,4 +1,5 @@
 @import "config";
+@import "mobile";
 
 html {
     margin: 0;
@@ -130,6 +131,14 @@ i {
         li {
             list-style:  none;
             text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding-bottom: 1rem;
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
         }
         .nav {
             background: darken($primary-color, 5);
@@ -151,6 +160,26 @@ i {
                 height: 250px;
                 background: url(../img/IMAG06090.jpg);
                 border-radius: 50%;
-                border: solid 3px $primary-color;
+                border: solid 5px darken($secondary-color,10);
             }
         }
+        .nav-item {
+            transform: translate3d(0,600px,0);
+            opacity: 0;
+            @include transitions;
+
+            &.show {
+                @include transitions;
+                opacity: 100;
+                transform: translate3d(0,0,0);
+            }
+
+            &.current {
+                color: $secondary-color;
+            }
+        }
+        @for $x from 1 to 4 {
+            .nav-item:nth-child(#{$x}){
+            transition-delay: $x*0.1s;
+        }
+    }
