@@ -16,36 +16,39 @@
       margin: 0;
       padding: 0; }
     body .home {
-      margin: 0; }
+      margin: 0;
+      overflow: normal; }
   .menu {
     float: none; }
     .menu .brand {
       transform: translate3d(-100%, 0, 0);
-      width: 100%; }
+      width: 100%;
+      height: 30vh;
+      transition-delay: 0.1s; }
       .menu .brand .protrait {
         width: 150px;
         height: 150px;
         background: url(../img/IMAG06090sm.jpg); }
       .menu .brand.show {
-        transform: translate3d(0, 0, 0);
-        height: 30vh; }
+        transform: translate3d(0, 0, 0); }
     .menu .nav {
       transform: translate3d(100%, 0, 0);
       width: 100%;
       align-items: center;
       justify-content: center;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      height: 70vh; }
       .menu .nav.show {
         transform: translate3d(0, 0, 0);
-        height: 70vh; } }
+        transition-delay: 0.1s; } }
 
 html {
   margin: 0;
   padding: 0; }
 
 body {
-  background: rgba(129, 60, 60, 0.5);
-  color: #fffefe;
+  background: rgba(112, 12, 12, 0.5);
+  color: #fff;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -60,10 +63,10 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    background: rgba(129, 60, 60, 0.5); }
+    background: rgba(112, 12, 12, 0.5); }
 
 h1, h2, h3 {
   margin: 0;
@@ -74,7 +77,7 @@ h1, h2, h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(136, 63, 63, 0.5); }
+    background: rgba(121, 13, 13, 0.5); }
 
 h1 {
   padding-top: 10rem;
@@ -90,12 +93,13 @@ header {
   width: 100%; }
 
 .secondName {
-  color: #016890; }
+  color: #a2ad01; }
 
 i {
-  margin: 10px 15px; }
+  margin: 10px 15px;
+  color: #fff; }
   i:hover {
-    color: #016890;
+    color: #a2ad01;
     transition: all 0.5s ease-out; }
 
 .home {
@@ -112,7 +116,7 @@ i {
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background-color: white; }
+    background-color: #fff; }
     .menu-btn .btn-dash.show:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn .btn-dash.show:nth-child(3) {
@@ -155,18 +159,18 @@ li {
   font-weight: 400;
   padding-bottom: 1rem; }
   li:hover {
-    color: #016890;
+    color: #a2ad01;
     cursor: pointer; }
 
 .nav {
-  background: #703434;
+  background: #590a0a;
   transform: translate3d(0, 100%, 0); }
   .nav.show {
     transition: all 0.5s ease-out;
     transform: translate3d(0, 0, 0); }
 
 .brand {
-  background: #813c3c;
+  background: #700c0c;
   transform: translate3d(0, -100%, 0); }
   .brand.show {
     transition: all 0.5s ease-out;
@@ -176,7 +180,7 @@ li {
     height: 250px;
     background: url(../img/IMAG06090.jpg);
     border-radius: 50%;
-    border: solid 5px #01435d; }
+    border: solid 5px #737a01; }
 
 .nav-item {
   transform: translate3d(0, 600px, 0);
@@ -187,7 +191,7 @@ li {
     opacity: 100;
     transform: translate3d(0, 0, 0); }
   .nav-item.current {
-    color: #016890; }
+    color: #a2ad01; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
