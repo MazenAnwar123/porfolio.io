@@ -11,11 +11,12 @@
       line-height: 1;
       margin: 0rem;
       margin-bottom: 1rem;
-      margin-top: 10vh;
-      color: green; }
+      margin-top: 10vh; }
     body .small-header {
       margin: 0;
       padding: 0; }
+    body .home {
+      margin: 0; }
   .menu {
     float: none; }
     .menu .brand {
