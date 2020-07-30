@@ -62,3 +62,36 @@ i {
 .home {
     overflow: hidden;
 }
+
+.menu-btn {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+    @include transitions;
+
+    .btn-dash{
+    @include transitions;
+     width: 28px;
+     height: 3px;
+     margin-bottom: 5px;
+     background-color: white;   
+     
+     &.show {
+            &:nth-child(1){
+             transform: rotate(45deg) translate(5px,5px ); 
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg) translate( 6px , -6px) ; 
+            }
+
+            &:nth-child(2){
+                transform: rotate(45deg) translate(-2px,-2px);
+                opacity: 0;
+        }
+    }
+}
+&.close{
+    transform: rotate(90deg);
+}
+}
