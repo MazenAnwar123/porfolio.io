@@ -17,6 +17,14 @@
             margin-top: 10vh;
             
         }
+        .larg-header1 { 
+            line-height: 1;
+            margin: 0rem;
+            margin-bottom: 1rem;
+            margin-top: 10vh;
+            padding:0;
+            
+        }
 
         .small-header {
             margin: 0;
@@ -74,5 +82,12 @@
     
     .bio-image {
         margin: auto;
+    }
+    .job {
+        margin: 30px;
+    }
+
+    .bio {
+       margin: 30px ;
     }
 }
