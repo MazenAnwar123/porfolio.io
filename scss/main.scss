@@ -27,20 +27,24 @@ h1 ,h2 ,h3 {
 
 &.larg-header {
         font-size: 5rem;
+        padding-top: 10rem;
+        padding-left: 2rem;
     }
+&.larg-header1 {
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
     
 &.small-header {
     font-size: 2rem;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, $amount: 2),0.5);
+    padding: 0.2rem 2rem;
+    background: rgba(lighten($primary-color, $amount: 2),0.2);
     }
 }
 
-h1 {
-    padding-top: 10rem;
-    padding-left: 1rem;
-}
+
 
 a {
     color: white;
@@ -102,7 +106,7 @@ i {
 }
 }
 .home {
-    margin-left: 4rem;
+    margin-left: 0rem;
 }
 .menu { 
     
@@ -161,14 +165,14 @@ i {
                 @include transitions;
                 transform: translate3d(0,0,0,);
             }
-            .protrait {
-                width: 250px;
-                height: 250px;
-                background: url(../img/IMAG06090.jpg);
-                border-radius: 50%;
-                border: solid 5px darken($secondary-color,10);
-            }
         }
+                .protrait {
+                    width: 250px;
+                    height: 250px;
+                    background: url(../img/IMAG06090.jpg);
+                    border-radius: 50%;
+                    border: solid 5px darken($secondary-color,10);
+                }
         .nav-item {
             transform: translate3d(0,600px,0);
             opacity: 0;
@@ -188,4 +192,65 @@ i {
             .nav-item:nth-child(#{$x}){
             transition-delay: $x*0.1s;
         }
+    }
+
+    .icons {
+        padding-left: 2rem;
+    }
+
+    .main-footer {
+        width: 100%;
+        text-align: center;
+      
+        align-self: center;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: darken($primary-color,5);
+    }
+    .bg-overlay {
+        background-color:$primary-color;
+    }
+
+    .about-info {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas:
+        "bio-image bio bio"    
+        "job1 job2 job3";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .bio-image {
+        grid-area: bio-image;
+        width: 250px;
+        height: 250px;
+        margin-left: 2rem;
+        background: url(../img/IMAG06090.jpg);
+        border-radius: 50%;
+        border: solid 5px darken($secondary-color,10);
+    }
+
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+
+    .job1 {
+        grid-area: job1;
+    } 
+    .job2 {
+        grid-area: job2;
+    } 
+    .job3 {
+        grid-area: job3;
+    } 
+
+    .job {
+        background: lighten($primary-color,5);
+        margin: 0.5rem;
+        margin-right: 0;
+        padding:0.5rem;
+        padding-left: 1rem ;
+        border-bottom: $secondary-color 5px solid;
     }

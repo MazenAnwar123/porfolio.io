@@ -47,7 +47,7 @@ html {
   padding: 0; }
 
 body {
-  background: rgba(112, 12, 12, 0.5);
+  background: rgba(78, 0, 0, 0.5);
   color: #fff;
   height: 100%;
   width: 100%;
@@ -66,22 +66,24 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background: rgba(112, 12, 12, 0.5); }
+    background: rgba(78, 0, 0, 0.5); }
 
 h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.larg-header, h2.larg-header, h3.larg-header {
-    font-size: 5rem; }
+    font-size: 5rem;
+    padding-top: 10rem;
+    padding-left: 2rem; }
+  h1.larg-header1, h2.larg-header1, h3.larg-header1 {
+    font-size: 5rem;
+    padding-top: 3rem;
+    padding-left: 2rem; }
   h1.small-header, h2.small-header, h3.small-header {
     font-size: 2rem;
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(121, 13, 13, 0.5); }
-
-h1 {
-  padding-top: 10rem;
-  padding-left: 1rem; }
+    padding: 0.2rem 2rem;
+    background: rgba(88, 0, 0, 0.2); }
 
 a {
   color: white;
@@ -128,7 +130,7 @@ i {
     transform: rotate(90deg); }
 
 .home {
-  margin-left: 4rem; }
+  margin-left: 0rem; }
 
 .menu {
   position: fixed;
@@ -163,24 +165,25 @@ li {
     cursor: pointer; }
 
 .nav {
-  background: #590a0a;
+  background: #350000;
   transform: translate3d(0, 100%, 0); }
   .nav.show {
     transition: all 0.5s ease-out;
     transform: translate3d(0, 0, 0); }
 
 .brand {
-  background: #700c0c;
+  background: #4e0000;
   transform: translate3d(0, -100%, 0); }
   .brand.show {
     transition: all 0.5s ease-out;
     transform: translate3d(0, 0, 0); }
-  .brand .protrait {
-    width: 250px;
-    height: 250px;
-    background: url(../img/IMAG06090.jpg);
-    border-radius: 50%;
-    border: solid 5px #737a01; }
+
+.protrait {
+  width: 250px;
+  height: 250px;
+  background: url(../img/IMAG06090.jpg);
+  border-radius: 50%;
+  border: solid 5px #737a01; }
 
 .nav-item {
   transform: translate3d(0, 600px, 0);
@@ -201,3 +204,54 @@ li {
 
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
+
+.icons {
+  padding-left: 2rem; }
+
+.main-footer {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #350000; }
+
+.bg-overlay {
+  background-color: #4e0000; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio-image bio bio"     "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.bio-image {
+  grid-area: bio-image;
+  width: 250px;
+  height: 250px;
+  margin-left: 2rem;
+  background: url(../img/IMAG06090.jpg);
+  border-radius: 50%;
+  border: solid 5px #737a01; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.job1 {
+  grid-area: job1; }
+
+.job2 {
+  grid-area: job2; }
+
+.job3 {
+  grid-area: job3; }
+
+.job {
+  background: #680000;
+  margin: 0.5rem;
+  margin-right: 0;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-bottom: #a2ad01 5px solid; }
