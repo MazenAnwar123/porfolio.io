@@ -1,5 +1,5 @@
 @import "config";
-@import "mobile";
+
 
 html {
     margin: 0;
@@ -254,3 +254,8 @@ i {
         padding-left: 1rem ;
         border-bottom: $secondary-color 5px solid;
     }
+
+
+    
+
+    @import "mobile";
