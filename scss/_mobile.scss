@@ -90,4 +90,24 @@
     .bio {
        margin: 30px ;
     }
+    .nav-item {
+        transform: translate3d(1000px,0,0);
+        opacity: 0;
+        @include transitions;
+
+        &.show {
+            @include transitions;
+            opacity: 100;
+            transform: translate3d(0,0,0);
+        }
+
+        &.current {
+            color: $secondary-color;
+        }
+    }
+    @for $x from 1 to 4 {
+        .nav-item:nth-child(#{$x}){
+        transition-delay: $x*0.1s;
+        }
+    }
 }
