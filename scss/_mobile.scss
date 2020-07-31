@@ -110,4 +110,7 @@
         transition-delay: $x*0.1s;
         }
     }
+    .projects{
+        grid-template-columns: 1fr;
+}
 }
