@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0; }
   body.bg-img {
-    background: url(../img/Gaming-PC-01.jpg);
+    background: url(../img/composing.jpg);
     background-size: cover;
     background-attachment: fixed;
     z-index: -1; }
