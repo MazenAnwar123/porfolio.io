@@ -66,6 +66,8 @@ i {
     &:hover{
         color: $secondary-color;
         @include transitions();
+        
+        
     }
 }
 .home {
@@ -296,6 +298,7 @@ i {
         color:set-text-color(rgb(98, 98, 98));
         i{
             color: set-text-color(rgb(98, 98, 98));
+            
         }
     }
 
@@ -380,7 +383,9 @@ i {
         padding-top: 5px;
         padding-bottom: 5px;
         background: darken($primary-color,5);
-    }
+          
+            
+        }
     
     
     
