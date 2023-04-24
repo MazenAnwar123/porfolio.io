@@ -52,6 +52,10 @@ header {
 .secondName {
   color: #c2bf29; }
 
+a {
+    color: white;
+  text-decoration: none; }
+
 i {
   margin: 10px 15px;
   color: #fff; }
@@ -59,15 +63,7 @@ i {
     color: #c2bf29;
     transition: all 0.5s ease-out; }
 
-.fa-linkedin {
-  margin: 10px 15px;
-  color: #fff; }
 
-a {
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  text-decoration: none; }
 
 .home {
   overflow: hidden; }
