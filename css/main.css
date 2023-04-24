@@ -42,9 +42,7 @@ h1, h2, h3 {
     padding: 0.2rem 2rem;
     background: rgba(88, 0, 0, 0.2); }
 
-a {
-  color: white;
-  text-decoration: none; }
+
 
 header {
   position: fixed;
@@ -65,6 +63,9 @@ i {
   margin: 10px 15px;
   color: #fff; }
 
+a {
+  color: white;
+  text-decoration: none; }
 
 .home {
   overflow: hidden; }
